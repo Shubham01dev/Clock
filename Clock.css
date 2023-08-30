@@ -1,0 +1,271 @@
+body {
+  background-image: url(src/shiva.jpg);
+  background-size:auto;
+  background-position-y: 10%;
+  background-attachment: fixed;
+
+
+}
+
+#main_container {
+  margin-top: 9%;
+
+}
+
+
+.heading{
+  color: aliceblue;
+  box-shadow: 0px 0px 40px 5px;
+}
+
+/* input Area */
+
+.input_Area {
+  margin: 50px;
+  font-family: "Times New Roman", Times, serif;
+}
+.input_Area label{
+   font-size: 20px;
+   font-weight: 800;
+}
+
+#btn {
+  border-radius: 0.5rem;
+  background-color: transparent;
+  border-color: grey;
+}
+
+#btn span{
+  font-size: 15px;
+}
+
+#Alram {
+  width: 80px;
+  border-top-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  background-color: transparent;
+  font-weight: 600;
+  color: aliceblue;
+
+}
+
+/* digital Clock */
+
+.digital {
+  width: 200px;
+  height: 100px;
+  border-radius: 1.5rem;
+  display: flex;
+  padding: 5px;
+  color: greenyellow;
+  box-shadow: 0px 0px 100px 15px;
+}
+
+.digital div {
+  width: 50%;
+  height: 100%;
+  font-size: 50px;
+  color: aliceblue
+}
+
+/* Clock design */
+
+#clock_border {
+  position: relative;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-top: 50px;
+  background:transparent;
+  box-shadow: 0px 0px 200px 30px red;
+}
+#clock_border div {
+  width: 8px;
+  height: 8px;
+  background-color: #ffca5fa8;
+}
+
+/* time stamp positioning */
+
+.time{
+ position: relative;
+}
+
+.time_1 {
+  top: 80px;
+  left: 126px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(150deg);
+}
+
+.time_2 {
+  top: 21px;
+  left: 70px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(125deg);
+}
+
+.time_3 {
+  top: 145px;
+  left: 146px;
+}
+.time_3 span {
+  position: relative;
+  top: -12px;
+  left: -11px;
+  color: #fff9c9 !important;
+  font-size: 20px;
+}
+
+.time_4 {
+  top: 198px;
+  left: 130px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(25deg);
+}
+
+.time_5 {
+  top: 258px;
+  left: 75px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(60deg);
+}
+
+.time_6 {
+  top: 275px;
+}
+
+.time_6 span {
+  position: relative;
+  top: -24px;
+  left: -1px;
+  color: #fff9c9 !important;
+  font-size: 20px;
+}
+
+.time_7 {
+
+  top: 248px;
+  left: -75px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(125deg);
+}
+
+.time_8 {
+
+  top: 191px;
+  left: -125px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(150deg);
+}
+
+.time_9 {
+
+  top: 122px;
+  right: 146px;
+}
+.time_9 span {
+  position: relative;
+  top: -13px;
+  left: 9px;
+  color: #fff9c9 !important;
+  font-size: 20px;
+}
+
+.time_10 {
+
+  top: 50px;
+  left: -129px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(25deg);
+}
+.time_11 {
+  top: -15px;
+  left: -70px;
+  height: 2px !important;
+  width: 12px !important;
+  transform: rotate(60deg);
+}
+
+.time_12 {
+  top: -40px;
+}
+
+.time_12 span {
+  position: relative;
+  top: 2px;
+  left: -6px;
+  color: #fff9c9 !important;
+  font-size: 20px;
+}
+
+.centerof_clock {
+  position: relative;
+  top: 100px;
+}
+
+/* watch neddles */
+
+.second_hand {
+  --rotaionValue: 0;
+  position: absolute;
+  top: 50px;
+  left: 148px;
+  width: 1px !important;
+  height: 100px !important;
+  transform: rotate(calc(var(--rotaionValue) * 1deg));
+  transform-origin: center bottom;
+}
+
+.min_hand {
+  --rotaionValue: 0;
+  position: absolute;
+  top: 52px;
+  left: 148px;
+  width: 3px !important;
+  height: 100px !important;
+  transform: rotate(calc(var(--rotaionValue) * 1deg));
+  transform-origin: center bottom;
+  border-radius: 1.5rem;
+}
+.hour_hand {
+  --rotaionValue: 0;
+  position: absolute;
+  top: 78px;
+  left: 147px;
+  width: 5px !important;
+  height: 75px !important;
+  transform: rotate(calc(var(--rotaionValue) * 1deg));
+  transform-origin: center bottom;
+  border-radius: 1.5rem;
+}
+
+
+@media (max-width: 967px){
+  .input_Area {
+    margin: 50px;
+    font-family: "Times New Roman", Times, serif;
+    color: aliceblue;
+  }
+  .input_Area label{
+    font-size: 20px;
+    font-weight: 500;
+ }
+
+ #btn {
+  border-radius: 0.5rem;
+  background-color: transparent;
+}
+
+#btn span{
+  font-size: 15px;
+  color: aliceblue;
+}
+}

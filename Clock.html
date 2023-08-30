@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Shubham Kumar Sahu">
+    <meta name="keyword" content="clock,time">
+    <meta name="description" content="building a clock from scratch">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="Clock.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- digital -->
+    <main>
+        <div id="main_container">
+            <center>
+                <h1 class="display-5 heading">TIME</h1>
+                <div class="digital my-5">
+                    <div class="hour">00</div>
+                    <div>:</div>
+                    <div class="minute">00</div>
+                    <div>:</div>
+                    <div class="second">00</div>
+                </div>
+
+                <!-- Alarm -->
+                <div class="input_Area">
+                    <label for="Alram">Set Alarm</label>
+                    <br>
+                    <input type="time" name="setAlram" id="Alram">
+                    <button type="submit" id="btn"><span>SET</span></button>
+                </div>
+                <!-- Analog -->
+
+                <div id="clock_border">
+                    <div class="second_hand"></div>
+                    <div class="min_hand"></div>
+                    <div class="hour_hand"></div>
+                    <div class="time_1 time"></div>
+                    <div class="time_2 time"></div>
+                    <div class="time_3 time"><span>3</span></div>
+                    <div class="time_4 time"></div>
+                    <div class="time_5 time"></div>
+                    <div class="time_6 time"><span>6</span></div>
+                    <div class="time_7 time"></div>
+                    <div class="time_8 time"></div>
+                    <div class="time_9 time"><span>9</span></div>
+                    <div class="time_10 time"></div>
+                    <div class="time_11 time"></div>
+                    <div class="time_12 time"><span>12</span></div>
+                    <div class="centerof_clock"></div>
+                </div>
+            </center>
+        </div>
+    </main>
+    <audio>
+        <source src="src/mixkit-digital-clock-digital-alarm-buzzer-992.wav" type="audio/wav">
+    </audio>
+
+
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
+        crossorigin="anonymous"></script>
+    <script src="Clock.js"></script>
+</body>
+
+</html>
