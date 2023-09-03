@@ -45,7 +45,7 @@ function clock() {
 
 
   // Alarm sound control
-console.log(currentTime,timeValue)
+
   if (currentTime == timeValue) {
     audio[0].play();
   } else if (currentTime > timeValue) {
