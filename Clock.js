@@ -35,7 +35,9 @@ function clock() {
   Digital_minute[0].innerHTML = time[1];
   Digital_second[0].innerHTML = time[2];
 
-  if (time[0].length == 2) {
+
+
+  if (String(time[0]).length == 2) {
     currentTime = time[0] + ":" + time[1];
   }else{
     currentTime = "0" + time[0] + ":" + time[1];
@@ -43,7 +45,7 @@ function clock() {
 
 
   // Alarm sound control
-
+console.log(currentTime,timeValue)
   if (currentTime == timeValue) {
     audio[0].play();
   } else if (currentTime > timeValue) {
